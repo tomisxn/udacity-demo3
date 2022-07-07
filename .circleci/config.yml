@@ -7,7 +7,7 @@ orbs:
 jobs:
   install-aws-cli:
     docker:
-      - image: circleci/python:3-alpine
+      - image: cimg/python:3.10.5
     steps:
       - checkout
       - run:
