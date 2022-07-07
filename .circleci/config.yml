@@ -19,4 +19,4 @@ jobs:
 workflows:
   my-workflow:
     jobs:
-      - say-hello
+      - install-aws-cli
