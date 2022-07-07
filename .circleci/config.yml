@@ -31,6 +31,6 @@ workflows:
   my-workflow:
     jobs:
       - install-aws-cli
-      - configure-aws-iam-profile
+      - configure-aws-iam-profile:
           requires:
-            install-aws-cli
+            - install-aws-cli
