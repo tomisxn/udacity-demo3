@@ -6,7 +6,8 @@ orbs:
 
 jobs:
   install-aws-cli:
-    executor: aws-cli/default
+    docker:
+      - image: circleci/pyhton
     steps:
       - checkout
       - run:
