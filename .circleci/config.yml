@@ -16,7 +16,8 @@ jobs:
             pip3 install awscli
   
   configure-aws-iam-profile:
-    executor: aws-cli/default
+    machine:
+      image: ubuntu-2004:202010-01 # recommended linux image
     steps:
       - checkout
       - run:
