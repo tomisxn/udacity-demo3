@@ -7,7 +7,7 @@ orbs:
 jobs:
   install-aws-cli:
     docker:
-      - image: circleci/pyhton:3.7
+      - image: circleci/python:3-alpine
     steps:
       - checkout
       - run:
