@@ -6,8 +6,7 @@ orbs:
 
 jobs:
   install-aws-cli:
-    docker:
-      - image: circleci/node:13.8.0
+    executor: aws-cli/default
     steps:
       - checkout
       - run:
